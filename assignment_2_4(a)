@@ -1,0 +1,15 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main(){
+    char s1[50],s2[50];
+    cout<<"enter the first string"<<" ";
+    cin>>s1;
+    cout<<"enter the second string"<<" ";
+    cin>>s2;
+
+    strcat(s1,s2);
+    cout<<"the concatenated string is: "<<s1<<endl;
+    return 0;
+
+}
