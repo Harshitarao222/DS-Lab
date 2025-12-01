@@ -38,7 +38,7 @@ void display(int a[], int n) {
 int main() {
     int a[100], n = 0, ch, val;
     do {
-        cout << "\n1.Insert  2.Delete Max  3.Display  4.Exit\n";
+        cout << "1.Insert  2.Delete Max  3.Display  4.Exit\n";
         cin >> ch;
         if (ch == 1) { cin >> val; insert(a, n, val); }
         else if (ch == 2) deleteMax(a, n);

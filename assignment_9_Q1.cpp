@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 void heapify(int a[], int n, int i, bool isMax) {
     int extreme = i;
     int l = 2*i + 1, r = 2*i + 2;
@@ -16,7 +15,6 @@ void heapify(int a[], int n, int i, bool isMax) {
         heapify(a, n, extreme, isMax);
     }
 }
-
 void heapSort(int a[], int n, bool isMax) {
     for (int i = n/2 - 1; i >= 0; i--) heapify(a, n, i, isMax);
     for (int i = n - 1; i > 0; i--) {
@@ -24,7 +22,6 @@ void heapSort(int a[], int n, bool isMax) {
         heapify(a, i, 0, isMax);
     }
 }
-
 int main() {
     int n, choice;
     cout << "Enter number of elements: ";
@@ -37,4 +34,5 @@ int main() {
     heapSort(a, n, (choice == 1));
     cout << "\nSorted Array: ";
     for (int i = 0; i < n; i++) cout << a[i] << " ";
+return 0;
 }
